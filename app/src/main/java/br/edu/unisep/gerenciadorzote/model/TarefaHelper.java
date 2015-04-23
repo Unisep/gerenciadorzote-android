@@ -1,4 +1,4 @@
-package br.edu.unisep.gerenciadorzotelp.model;
+package br.edu.unisep.gerenciadorzote.model;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

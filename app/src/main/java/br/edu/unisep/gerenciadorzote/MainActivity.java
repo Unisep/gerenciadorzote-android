@@ -1,4 +1,4 @@
-package br.edu.unisep.gerenciadorzotelp;
+package br.edu.unisep.gerenciadorzote;
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -11,9 +11,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 
-import br.edu.unisep.gerenciadorzotelp.adapter.TarefaCursorAdapter;
-import br.edu.unisep.gerenciadorzotelp.model.TarefaDAO;
-import br.edu.unisep.gerenciadorzotelp.vo.TarefaVO;
+import br.edu.unisep.gerenciadorzote.adapter.TarefaCursorAdapter;
+import br.edu.unisep.gerenciadorzote.model.TarefaDAO;
+import br.edu.unisep.gerenciadorzote.vo.TarefaVO;
 
 
 public class MainActivity extends ListActivity {

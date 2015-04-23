@@ -1,4 +1,4 @@
-package br.edu.unisep.gerenciadorzotelp.vo;
+package br.edu.unisep.gerenciadorzote.vo;
 
 import java.io.Serializable;
 import java.util.Date;

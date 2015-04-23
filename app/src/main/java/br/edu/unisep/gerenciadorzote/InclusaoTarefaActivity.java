@@ -1,4 +1,4 @@
-package br.edu.unisep.gerenciadorzotelp;
+package br.edu.unisep.gerenciadorzote;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,8 +10,8 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-import br.edu.unisep.gerenciadorzotelp.model.TarefaDAO;
-import br.edu.unisep.gerenciadorzotelp.vo.TarefaVO;
+import br.edu.unisep.gerenciadorzote.model.TarefaDAO;
+import br.edu.unisep.gerenciadorzote.vo.TarefaVO;
 
 /**
  * Created by ESutil on 21/04/2015.

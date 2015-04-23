@@ -1,4 +1,4 @@
-package br.edu.unisep.gerenciadorzotelp.adapter;
+package br.edu.unisep.gerenciadorzote.adapter;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -12,7 +12,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import br.edu.unisep.gerenciadorzotelp.R;
+import br.edu.unisep.gerenciadorzote.R;
 
 /**
  * Created by ESutil on 21/04/2015.
@@ -57,8 +57,5 @@ public class TarefaCursorAdapter extends CursorAdapter {
         DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
 
         lblPrazo.setText(df.format(prazo));
-
     }
-
-
 }

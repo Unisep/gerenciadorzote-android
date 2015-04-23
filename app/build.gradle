@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "br.edu.unisep.gerenciadorzotelp"
+        applicationId "br.edu.unisep.gerenciadorzote"
         minSdkVersion 21
         targetSdkVersion 22
         versionCode 1

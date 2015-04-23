@@ -1,4 +1,4 @@
-package br.edu.unisep.gerenciadorzotelp;
+package br.edu.unisep.gerenciadorzote;
 
 import android.app.Activity;
 import android.os.Bundle;

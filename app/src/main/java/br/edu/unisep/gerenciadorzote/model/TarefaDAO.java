@@ -1,11 +1,11 @@
-package br.edu.unisep.gerenciadorzotelp.model;
+package br.edu.unisep.gerenciadorzote.model;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import br.edu.unisep.gerenciadorzotelp.vo.TarefaVO;
+import br.edu.unisep.gerenciadorzote.vo.TarefaVO;
 
 /**
  * Created by ESutil on 21/04/2015.
@@ -19,7 +19,6 @@ public class TarefaDAO {
     }
 
     public void salvar(TarefaVO tarefa){
-
         // possibilita a aplicação gravar no banco
         SQLiteDatabase db = helper.getWritableDatabase();
 
@@ -33,17 +32,12 @@ public class TarefaDAO {
     }
 
     public Cursor listar(){
-
         // Comunicação somente leitura com o banco.
         SQLiteDatabase db = helper.getReadableDatabase();
 
-        String[] colunas = {"_id",
-                "titulo",
-                "descricao",
-                "prazo"};
+        String[] colunas = {"_id", "titulo", "descricao", "prazo"};
 
-        Cursor crs = db.query("tarefas", colunas, null, null, null, null, null);
-        return crs;
+        return db.query("tarefas", colunas, null, null, null, null, null);
     }
 
     public void excluir(long id){
@@ -55,6 +49,4 @@ public class TarefaDAO {
         db.delete("tarefas", "_id = ?", valoresWhere);
         db.close();
     }
-
-
 }

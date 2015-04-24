@@ -22,7 +22,7 @@
         </activity>
         <activity
             android:name="br.edu.unisep.gerenciadorzote.VerTarefaActivity"
-            android:label="ver_tarefa" >
+            android:label="Ver Tarefa">
         </activity>
     </application>
 

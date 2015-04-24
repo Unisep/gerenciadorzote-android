@@ -20,6 +20,10 @@
             android:name="br.edu.unisep.gerenciadorzote.InclusaoTarefaActivity"
             android:label="@string/title_activity_inclusao_tarefa" >
         </activity>
+        <activity
+            android:name="br.edu.unisep.gerenciadorzote.VerTarefaActivity"
+            android:label="ver_tarefa" >
+        </activity>
     </application>
 
 </manifest>

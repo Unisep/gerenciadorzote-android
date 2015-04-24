@@ -40,6 +40,16 @@ public class TarefaDAO {
         return db.query("tarefas", colunas, null, null, null, null, null);
     }
 
+    public Cursor selecionar(long id){
+        SQLiteDatabase db = helper.getReadableDatabase();
+
+        String[] colunas = { "_id", "titulo", "descricao", "prazo" };
+        String[] valoresWhere = { String.valueOf(id) };
+
+        return db.query("tarefas", colunas, "_id = ?", valoresWhere, null, null, null);
+
+    }
+
     public void excluir(long id){
 
         SQLiteDatabase db = helper.getWritableDatabase();

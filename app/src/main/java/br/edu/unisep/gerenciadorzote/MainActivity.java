@@ -10,6 +10,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ListView;
 
 import br.edu.unisep.gerenciadorzote.adapter.TarefaCursorAdapter;
 import br.edu.unisep.gerenciadorzote.model.TarefaDAO;
@@ -59,6 +60,17 @@ public class MainActivity extends ListActivity {
             adapter.notifyDataSetChanged();
         }
         return true;
+    }
+
+    @Override
+    protected void onListItemClick(ListView l, View v, int position, long id) {
+        //super.onListItemClick(l, v, position, id);
+        //
+
+        Intent intent = new Intent(this, VerTarefaActivity.class);
+        intent.putExtra("tarefa_id", adapter.getItemId(position));
+
+        startActivity(intent);
     }
 
     @Override
